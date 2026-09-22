@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <!-- Círculo base monocromático con halo carmesí sutil -->
+  <circle cx="60" cy="60" r="58" fill="#030304" stroke="#4c0210" stroke-width="2"/>
+  
+  <!-- Resplandor interior -->
+  <circle cx="60" cy="60" r="54" fill="#0c0c0f" stroke="#e11d48" stroke-opacity="0.25" stroke-width="1.5"/>
+
+  <!-- Isotipo: Silueta geométrica y minimalista de gato en blanco puro -->
+  <g fill="#ffffff">
+    <path d="M36 41 L45 56 L75 56 L84 41 L80 73 C78 84 70 92 60 92 C50 92 42 84 40 73 Z" />
+  </g>
+  
+  <!-- Ojos técnicos y corte geométrico -->
+  <g fill="#030304">
+    <polygon points="46,65 54,67 52,71 45,69" />
+    <polygon points="74,65 66,67 68,71 75,69" />
+    <polygon points="60,76 56,73 64,73" />
+  </g>
+
+  <!-- Pupilas / Acento en Rojo Escarlata Neón -->
+  <circle cx="49" cy="67.5" r="1.3" fill="#ff2e2e" />
+  <circle cx="71" cy="67.5" r="1.3" fill="#ff2e2e" />
+</svg>

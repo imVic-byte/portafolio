@@ -1,0 +1,56 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Desarrollo de Software a Medida & Arquitectura Segura | Portafolio",
+  description = "Sistemas de gestión, aplicaciones web de alto rendimiento e infraestructura escalable para negocios. Especialista en Astro, Vue 3, Cloudflare, Linux y Ciberseguridad."
+} = Astro.props;
+
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="es" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/webp" href="/logo.webp" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- SEO Primario -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#030304" />
+
+    <!-- Open Graph / Redes Sociales -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="/logo.webp" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+  </head>
+  <body class="bg-[#030304] text-zinc-300 antialiased min-h-screen flex flex-col selection:bg-red-500/25 selection:text-red-200 relative overflow-x-hidden">
+    <!-- Resplandor Atmosférico Superior Carmesí (Inspirado en AutoRelay y Nexus AI) -->
+    <div class="ambient-glow-top"></div>
+
+    <!-- Patrón de retícula técnica de ingeniería -->
+    <div class="fixed inset-0 bg-grid-pattern opacity-40 pointer-events-none z-0"></div>
+
+    <!-- Contenedor Principal de la Aplicación -->
+    <div class="relative z-10 flex flex-col min-h-screen">
+      <slot />
+    </div>
+
+    <!-- Resplandor Atmosférico Inferior Carmesí -->
+    <div class="ambient-glow-footer"></div>
+  </body>
+</html>

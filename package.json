@@ -1,0 +1,25 @@
+{
+  "name": "portafolio-ingenieria",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/vue": "^7.0.3",
+    "@fontsource/inter": "^5.1.1",
+    "@fontsource/space-grotesk": "^5.1.1",
+    "@tailwindcss/vite": "^4.0.9",
+    "astro": "^7.3.3",
+    "tailwindcss": "^4.0.9",
+    "vue": "^3.5.24"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "typescript": "^6.0.3"
+  }
+}

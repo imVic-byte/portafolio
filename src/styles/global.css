@@ -1,0 +1,154 @@
+@import "@fontsource/space-grotesk/500.css";
+@import "@fontsource/space-grotesk/600.css";
+@import "@fontsource/space-grotesk/700.css";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "tailwindcss";
+
+@theme {
+  --font-heading: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  /* Paleta Crimson & Obsidian Tech inspirada en Valina, AutoRelay y Nexus AI */
+  --color-obsidian-950: #030304;
+  --color-obsidian-900: #08080a;
+  --color-obsidian-850: #0c0c0f;
+  --color-obsidian-800: #121217;
+  --color-crimson-900: #2a0408;
+  --color-crimson-800: #4c0210;
+  --color-crimson-600: #9f1225;
+  --color-crimson-500: #e11d48;
+  --color-scarlet-500: #ff2a2a;
+  --color-scarlet-400: #ff4d4d;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #030304; /* Pitch Black Obsidiana */
+  color: #d4d4d8;
+  font-family: var(--font-sans);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #030304;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Tipografía técnica para encabezados */
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: var(--font-heading);
+  letter-spacing: -0.03em;
+}
+
+/* Selección de texto en rojo carmesí translúcido */
+::selection {
+  background-color: rgba(239, 68, 68, 0.35);
+  color: #fecaca;
+}
+
+/* Scrollbar técnica minimalista con acento carmesí */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #030304;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1c1c24;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9f1225;
+}
+
+/* Patrón sutil de cuadrícula arquitectónica para el fondo */
+.bg-grid-pattern {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 0);
+  background-size: 32px 32px;
+}
+
+/* Tipografía Monumental Delineada (Outlined Typography estilo AutoRelay) */
+.text-outline-subtle {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.06);
+  color: transparent;
+  user-select: none;
+}
+
+.text-outline-red {
+  -webkit-text-stroke: 1.5px rgba(239, 68, 68, 0.22);
+  color: transparent;
+  user-select: none;
+}
+
+.text-outline-red-strong {
+  -webkit-text-stroke: 1.5px rgba(244, 63, 94, 0.45);
+  color: transparent;
+  user-select: none;
+}
+
+/* Resplandores Atmosféricos (Inspirados en AutoRelay y Nexus AI) */
+.ambient-glow-top {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1000px;
+  height: 480px;
+  background: radial-gradient(ellipse at top, rgba(225, 29, 72, 0.22) 0%, rgba(76, 2, 16, 0.12) 45%, transparent 75%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ambient-glow-footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 400px;
+  background: radial-gradient(ellipse at bottom, rgba(225, 29, 72, 0.20) 0%, rgba(76, 2, 16, 0.10) 45%, transparent 75%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Tarjetas Obsidian Glass con Borde Iluminado */
+.obsidian-card {
+  position: relative;
+  background: rgba(12, 12, 15, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.obsidian-card:hover {
+  border-color: rgba(239, 68, 68, 0.35);
+  box-shadow: 0 0 35px -8px rgba(239, 68, 68, 0.18);
+}
+
+/* Botón Carmesí Neón con Resplandor */
+.btn-crimson-glow {
+  background: linear-gradient(135deg, #ef4444 0%, #e11d48 50%, #be123c 100%);
+  color: #ffffff;
+  box-shadow: 0 0 25px -4px rgba(239, 68, 68, 0.45);
+  transition: all 0.2s ease;
+}
+
+.btn-crimson-glow:hover {
+  background: linear-gradient(135deg, #f87171 0%, #f43f5e 50%, #e11d48 100%);
+  box-shadow: 0 0 35px -2px rgba(239, 68, 68, 0.65);
+}

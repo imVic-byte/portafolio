@@ -1,0 +1,50 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import AboutMe from '../components/AboutMe.astro';
+import BentoGrid from '../components/BentoGrid.astro';
+import Projects from '../components/Projects.astro';
+import Footer from '../components/Footer.astro';
+import QuickContactGenerator from '../components/interactive/QuickContactGenerator.vue';
+import ArchitectureTelemetry from '../components/interactive/ArchitectureTelemetry.vue';
+---
+
+<Layout
+  title="Hablemos de tu Negocio, No de Tecnicismos | imVic Software & Ciberseguridad"
+  description="Sistemas de gestión, aplicaciones web de alto rendimiento e infraestructura escalable para negocios. Especialista en Astro, Vue 3, Cloudflare, Linux y Ciberseguridad."
+>
+  <!-- Barra de Navegación Superior -->
+  <Header />
+
+  <main class="flex-1">
+    <!-- Hero Principal (Gancho de Alto Impacto Comercial) -->
+    <Hero />
+
+    <!-- Sección Sobre Mí & Enfoque de Ingeniería (Contenido Previo del Hero) -->
+    <AboutMe />
+
+    <!-- Sección Bento Grid: Perfil e Infraestructura -->
+    <BentoGrid />
+
+    <!-- Widget Interactivo: Telemetría de Arquitectura (Vue 3) -->
+    <section class="py-8 bg-[#030304]/60 border-b border-white/5 relative z-10">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <ArchitectureTelemetry client:visible />
+      </div>
+    </section>
+
+    <!-- Sección Proyectos: Casos de Uso Comercial -->
+    <Projects />
+
+    <!-- Sección Interactiva: Configurador de Demostración & WhatsApp (Vue 3) -->
+    <section class="py-16 md:py-24 border-b border-white/5 bg-[#030304] relative z-10">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        <QuickContactGenerator client:visible />
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de Página & CTA Final -->
+  <Footer />
+</Layout>
